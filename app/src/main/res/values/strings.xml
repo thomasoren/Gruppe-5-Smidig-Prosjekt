@@ -1,11 +1,7 @@
 <resources>
-    <string name="app_name">Front</string>
-    <string name="title_shop">Butikk</string>
-    <string name="title_profile">Profil</string>
-    <string name="title_time">Trafikk info</string>
-    <string name="title_vy">Hvor vil du reise?</string>
-    <string-array name="destinations">
-        <item>........</item>
+    <string name="app_name">My First App</string>
+    
+    <string-array name="tickets">
         <item>Drammen</item>
         <item>Skien</item>
     </string-array>

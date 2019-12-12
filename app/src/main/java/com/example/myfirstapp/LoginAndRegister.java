@@ -9,19 +9,18 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.front.R;
-
 import java.util.ArrayList;
 
 public class LoginAndRegister extends AppCompatActivity {
 
-    public ArrayList<String> users = new ArrayList<String>();
-    public ArrayList<String> password = new ArrayList<String>();
+    static ArrayList<String> users = new ArrayList<String>();
+    static ArrayList<String> password = new ArrayList<String>();
+    static int index;
     public ArrayList<String> getList(){
         return users;
     }
 
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
@@ -65,8 +64,9 @@ public class LoginAndRegister extends AppCompatActivity {
                     if (logUser.equals(userCheck)) {
                         if (logPass.equals(passCheck)) {
                             confirmLogin.setText(success);
-                            Intent intent = new Intent(LoginAndRegister.this, ProfilePage.class);
-                            startActivity(intent);
+                            Intent profileIntent = new Intent(LoginAndRegister.this, ProfilePage.class);
+                            startActivity(profileIntent);
+                            index = i;
 
                         }else{
                             confirmLogin.setText(fail);
