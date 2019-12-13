@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FAQ"></activity>
+        <activity android:name=".real_time_table"></activity>
+        <activity android:name=".FAQ" />
         <activity android:name=".Frontpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProfilePage" />
-        <activity android:name=".LoginAndRegister"></activity>
+        <activity android:name=".LoginAndRegister" />
     </application>
 
 </manifest>
