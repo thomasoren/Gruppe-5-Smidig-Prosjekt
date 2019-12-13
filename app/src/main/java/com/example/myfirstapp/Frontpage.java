@@ -18,6 +18,7 @@ public class Frontpage extends AppCompatActivity implements AdapterView.OnItemSe
         setContentView(R.layout.frontpage);
         Button profilBtn =(Button)findViewById(R.id.buttonbutton);
         Button faqBtn = (Button) findViewById(R.id.FAQ_Btn);
+        final Button tableBtn = (Button) findViewById(R.id.tableBtn);
 
         profilBtn.setOnClickListener(new View.OnClickListener() {
 
@@ -32,6 +33,13 @@ public class Frontpage extends AppCompatActivity implements AdapterView.OnItemSe
             public void onClick(View v) {
                 Intent faqIntent = new Intent(Frontpage.this, FAQ.class);
                 startActivity(faqIntent);
+            }
+        });
+
+        tableBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent tableIntent = new Intent(Frontpage.this, real_time_table.class);
+                startActivity(tableIntent);
             }
         });
 
